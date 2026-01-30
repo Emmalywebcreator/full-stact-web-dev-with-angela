@@ -1,0 +1,134 @@
+/* body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.tile-image {
+  width: 500px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+ */
+
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+
+ body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fcfcfc;
+  color: #000;
+  margin: 50px 50px 0 50px;
+ }
+
+ .main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo, h1 {
+  grid-column: 1 / -1;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  max-width: 600px;
+  margin-bottom: 3rem;
+}
+
+.highlight {
+  color: #1a1a60;
+}
+
+.flex-container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.left, .right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 30px;
+}
+
+.tile-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  line-height: 1.6;
+  font-size: 0.9;
+  width: 70%;
+}
+
+
+.play-btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100px;
+  height: 100px;
+  background-color: #161621;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  color: #1a1a60;
+  margin-top: 2rem;
+ }
