@@ -12,17 +12,25 @@
       font-weight: 700;
     }
 
+    .main-container {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: lightblue;
+    }
+
     li {
       list-style: none;
     }
 
-    .container {
+    .header-container {
       padding: 10px;
       background-color: gold;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: relative
+      position: relative;
     }
 
     .nav {
@@ -41,20 +49,59 @@
       padding: 5px;
     }
 
+    .main {
+      background-color: lightgray;
+      margin-top: 10px;
+      flex: 1;
+      display: block;
+    }
+
+    .footer {
+      background-color: darkgray;
+      margin-top: 10px;
+      min-height: 50px;
+      text-align: center;
+    }
+
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <p>Page Layout Methods</p>
-    <div class="nav">
-      <li><a href="./html-table.html">HTML Table</a></li>
-      <li><a href="./inline-block.html">Inline-Block</li>
-      <li><a href="./absolute-position.html">Absolute Positioning</li>
-      <li><a href="./float.html">Float</li>
-      <li><a href="./flex.html">Flexbox</li>
+  <div class="main-container">
+    <div class="header-container">
+      <p>Page Layout Methods</p>
+      <div class="nav">
+        <li><a href="./html-table.html">HTML Table</a></li>
+        <li><a href="./inline-block.html">Inline-Block</a></li>
+        <li><a href="./absolute-position.html">Absolute Positioning</a></li>
+        <li><a href="./float.html">Float</a></li>
+        <li><a href="./flex.html">Flexbox</a></li>
+      </div>
+    </div>
+    <div class="main">
+  <div class="agency-content">
+    <img class="logo-agency" src="./assets/images/logo.png" alt="logo">
+    <h1>We are a <span class="highlight">Creative</span> Design Agency</h1>
+    
+    <div class="play-btn"></div>
+
+    <div class="card left">
+      <img class="tile-image" src="./assets/images/beautiful.jpg" alt="Beauty">
+      <h2>Beauty</h2>
+      <p>We strive to create the most beautiful websites...</p>
     </div>
 
+    <div class="card right">
+      <img class="tile-image" src="./assets/images/construction.jpg" alt="Construction">
+      <h2>Construction</h2>
+      <p>Built by our team of professional developers...</p>
+    </div>
+  </div>
+</div>
+
+    <div class="footer">
+      <p style="padding: 10px;">© 2024 My Layout</p>
+    </div>
   </div>
 </body>
 
